@@ -124,6 +124,7 @@ TENSORFLOW_DEPS = [
 
 cc_binary(
     name = "tensorflow_model_server",
+    linkopts = ["-static"],   # ADDED
     srcs = [
         "main.cc",
     ],
